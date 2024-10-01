@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content {
+  height: 100vh;
+  width: 50vw;
+  display: block;
+}
+@media (max-width: 768px) {
+  #content {
+    width: 100vw;
+  }
+}
+#retryButton,
+#playButton {
+  display: none; /* Ẩn nút lúc đầu */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgb(250, 52, 163);
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media (max-width: 300px) {
+  #retryButton,
+  #playButton {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
